@@ -43,7 +43,7 @@ const CheckoutForm = () => {
         },
         {
           headers: {
-            "x-api-key": "66dc4d6e1e73861a5a718142:jjEtUNtBp6n0WGzhci6I7v7lW3TkjPfW", // Replace with your actual API key
+            "x-api-key": "66dc4d6e1e73861a5a718142:8B6c8TGshiVlZdUyRADf94N", // Replace with your actual API key
           },
         }
       );
