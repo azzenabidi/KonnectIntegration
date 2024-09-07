@@ -28,7 +28,7 @@ const CheckoutForm = () => {
         "https://api.preprod.konnect.network/api/v2/payments/init-payment",
         {
           ...formData, // Spreads the current state into the request body
-          receiverWalletId: "<YOUR_WALLET_ID>",
+          receiverWalletId: "66dc4d6e1e73861a5a718148",
           acceptedPaymentMethods: ["bank_card", "e-DINAR", "flouci"],
           token: "TND",
           type: "immediate",
@@ -36,14 +36,14 @@ const CheckoutForm = () => {
           checkoutForm: false,
           theme: "dark",
           addPaymentFeesToAmount: false,
-          webhook: "<YOUR_WEBHOOK_URL>",
+          webhook: "",
           silentWebhook: true,
-          successUrl: "<YOUR_SUCCESS_URL>",
-          failUrl: "<YOUR_FAIL_URL>",
+          successUrl: "https://gateway.sandbox.konnect.network/payment-success",
+          failUrl: "https://gateway.sandbox.konnect.network/payment-failure",
         },
         {
           headers: {
-            "x-api-key": "<YOUR_API_KEY>", // Replace with your actual API key
+            "x-api-key": "66dc4d6e1e73861a5a718142:jjEtUNtBp6n0WGzhci6I7v7lW3TkjPfW", // Replace with your actual API key
           },
         }
       );
